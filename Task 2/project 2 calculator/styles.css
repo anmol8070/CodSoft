@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fHw%3D') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    width: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.display {
+    background-color: rgba(50, 50, 50, 0.7);
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 5px;
+    color: rgba(50, 50, 50, 0.8);
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+#clear {
+    grid-column: span 2;
+    background-color: rgba(244, 67, 54, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#clear:hover {
+    background-color: rgba(244, 67, 54, 0.9);
+}
+
+#backspace {
+    background-color: rgba(255, 152, 0, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#backspace:hover {
+    background-color: rgba(255, 152, 0, 0.9);
+}
+
+#equals {
+    grid-column: span 2;
+    background-color: rgba(76, 175, 80, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#equals:hover {
+    background-color: rgba(76, 175, 80, 0.9);
+}
